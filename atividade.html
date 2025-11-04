@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+<body>
+
+    <!-- ====== CABEÇALHO ====== -->
+    <header>
+        <h1>Supernova Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+        </nav>
+    </header>
+
+    <!-- ====== ÁREA PRINCIPAL ====== -->
+    <main>
+        <h2>Catálogo de Produtos</h2>
+
+        <section class="videos">
+            <div>
+                <video src="https://www.pexels.com/pt-br/download/video/4884242/" autoplay muted loop playsinline></video>
+            </div>
+            <hr>
+        </section>
+        <section class="grid-produtos">
+            <!-- Produto 1 -->
+            <div class="card">
+                <img src="https://blog.maximustecidos.com.br/wp-content/uploads/2020/03/alfaiataria-maximus-tecidos-1024x760.jpg" alt="Produto 1">
+                <div class="card-content">
+                    <h3>Coleção Alfaiataria</h3>
+                    <p>Camisa de algodão confortável e estilosa.</p>
+                    <div class="preco">R$ 89,90</div>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="card">
+                <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/c_limit,w_1920/v1711367502/rolexcom/collection/family-pages/classic-watches/datejust/family-page/videos/cover/autoplay/2024/classic-watches-datejust-cover-autoplay-posterframe.jpg" alt="Produto 2">
+                <div class="card-content">
+                    <h3>Relógio Clássico</h3>
+                    <p>Design elegante e resistente à água.</p>
+                    <div class="preco">R$ 299,00</div>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="card">
+                <img src="https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/ousyshoe/catalog/1317/masculino/dsc4981.JPG" alt="Produto 3">
+                <div class="card-content">
+                    <h3>Tênis Esportivo</h3>
+                    <p>Ideal para corrida e caminhadas diárias.</p>
+                    <div class="preco">R$ 199,90</div>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="card">
+                <img src="https://mirandacomputacao.jetassets.com.br/produto/multifotos/hd/47304-principal.png" alt="Produto 4">
+                <div class="card-content">
+                    <h3>Fone Bluetooth</h3>
+                    <p>Som de alta qualidade e bateria duradoura.</p>
+                    <div class="preco">R$ 149,90</div>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="card">
+                <img src="https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/arieiaou/catalog/mochila/mochila-marrom-6.JPG" alt="Produto 5">
+                <div class="card-content">
+                    <h3>Mochila Escolar</h3>
+                    <p>Espaçosa e resistente à água.</p>
+                    <div class="preco">R$ 129,00</div>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="card">
+                <img src="https://framerusercontent.com/images/aGyD4nWyqdHfK9Hk6ZvIPdl9Qo.webp?width=935&height=720" alt="Produto 6">
+                <div class="card-content">
+                    <h3>Óculos de Sol</h3>
+                    <p>Proteção UV e design moderno.</p>
+                    <div class="preco">R$ 99,90</div>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== RODAPÉ ====== -->
+    <footer>
+        <p>© 2025 Supernova Marketplace. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:contato@supernovamarketplace.com">contato@supernovamarketplace.com</a></p>
+    </footer>
+
+    <!-- ====== SCRIPT JAVASCRIPT ====== -->
+    <script>
+        const botoes = document.querySelectorAll('.btn');
+        botoes.forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Produto adicionado ao carrinho!');
+            });
+        });
+    </script>
+</body>
+</html>
